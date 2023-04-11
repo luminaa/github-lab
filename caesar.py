@@ -23,6 +23,6 @@ def caesar_encrpyt(text, shift):
 if __name__ == '__main__':
     text = sys.argv[1]
     shift = int(sys.argv[2])
-    print("Text  : " + text)
-    print("Shift : " + str(shift))
-    print("Cipher: " + caesar_encrpyt(text, shift))
+    print(f"Text  : {text}")
+    print(f"Shift : {shift}")
+    print(f"Cipher: {caesar_encrpyt(text, shift)}")
