@@ -5,15 +5,21 @@ def caesar_encrpyt(text, shift):
     result = ""
     text = text.upper()
 
+    # loop over each character in the input text
     for i in range(len(text)):
         char = text[i]
+
+        # remove spaces and skip non-alphabetic characters
         if char == " ":
             continue
         if not char.isalpha():
             result += char
             continue
+
+        # shifts the characters by specified number of places
         result += chr(((ord(char) + shift-65) % 26) + 65)
 
+    # split the result into blocks of 5 characters and join them with spaces
     blocks = [result[i:i+5] for i in range(0, len(result), 5)]
     result = ' '.join(blocks)
 
