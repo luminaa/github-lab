@@ -3,13 +3,11 @@ import sys
 
 def caesar_encrpyt(text, shift):
     result = ""
-
+    text = text.upper()
+    
     for i in range(len(text)):
         char = text[i]
-        if (char.isupper()):
-            result += chr(((ord(char) + shift-65) % 26) + 65)
-        else:
-            result += chr(((ord(char) + shift-97) % 26) + 97)
+        result += chr(((ord(char) + shift-65) % 26) + 65)
 
     return result
 
