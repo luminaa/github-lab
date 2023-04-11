@@ -7,8 +7,8 @@ def caesar_encrpyt(text, shift):
 
     for i in range(len(text)):
         char = text[i]
-        if char == " ":
-            result += " "
+        if not char.isalpha():
+            result += char
             continue
         result += chr(((ord(char) + shift-65) % 26) + 65)
 
