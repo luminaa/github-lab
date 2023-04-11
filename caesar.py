@@ -4,9 +4,12 @@ import sys
 def caesar_encrpyt(text, shift):
     result = ""
     text = text.upper()
-    
+
     for i in range(len(text)):
         char = text[i]
+        if char == " ":
+            result += " "
+            continue
         result += chr(((ord(char) + shift-65) % 26) + 65)
 
     return result
