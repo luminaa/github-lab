@@ -4,7 +4,7 @@ This code takes two arguments from the command line: a string of text to encrypt
 
 ## How To Use
 
-Clone the repository to your local machine:
+Clone the repository:
 
 ```bash
 git clone https://github.com/luminaa/github-lab
