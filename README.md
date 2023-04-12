@@ -30,7 +30,7 @@ This cipher is a type of substitution cipher. The idea of a Caesar cipher is thi
 
     The above command will encrypt the string "Encrypt this text" using a shift of 3 and print the encrypted result to the console. This would be "HQFUB SWWKL VWHAW"
 
-4. Alternatively, you can use the bash script `caesar.sh`. First, you have to make it executable. Run the following command in your shell.
+4. Alternatively, you can use the bash script `caesar.sh`. (*THIS ONLY WORKS FOR LINUX AND MAC*) First, you have to make it executable. Run the following command in your shell.
 
     ```bash
     chmod +x caesar.sh
