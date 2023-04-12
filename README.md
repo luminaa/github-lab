@@ -6,7 +6,7 @@ This code takes two arguments from the command line: a string of text to encrypt
 
 This cipher is a type of substitution cipher. The idea of a Caesar cipher is this: you encode a message by shifting each letter some number of places. Thus, if the shift is 2, then A becomes C, B becomes D, and so on. Like this:
 
-![Example of Caesar Cipher](github-lab\pictures\example.jpg)
+![Example of Caesar Cipher](pictures\example.jpg)
 
 ## How To Use
 
