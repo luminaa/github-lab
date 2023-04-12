@@ -30,6 +30,6 @@ def caesar_encrypt(text, shift):
 if __name__ == '__main__':
     text = sys.argv[1]
     shift = int(sys.argv[2])
-    print(f"Text  : {text}")
+    print(f"Text  : \n{text}")
     print(f"Shift : {shift}")
     print(f"Cipher: \n{caesar_encrypt(text, shift)}")
