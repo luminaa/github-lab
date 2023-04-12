@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-This code takes two arguments from the command line: a string of text to encrypt and the number of positions to shift each letter by. The program then encrypts the text using the Caesar Cipher method and prints the result to the console. The encrypted text is printed in blocks of five letters.
+This code takes two arguments from the command line: a string of text to encrypt and the number of positions to shift each letter by. The program then encrypts the text using the Caesar Cipher method and prints the result to the console. The encrypted text is printed in blocks of five letters and a maximun of 10 blocks per line.
 
 ## How To Use
 
