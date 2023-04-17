@@ -2,29 +2,30 @@ import sys
 
 
 def caesar_encrypt(text, shift):
-    result = ""
-    text = text.upper()
+    result = []
+    text = text.upper().strip()
 
-    # loop over each character in the input text
+    block_size = 5
+    block_count = 0
+    line_size = 10
+
     for i in range(len(text)):
         char = text[i]
 
-        # remove spaces and skip non-alphabetic characters
         if char == " ":
             continue
-        # if not char.isalpha():
-        #     result += char
-        #     continue
 
-        # shift the characters by the specified number of places
-        result += chr(((ord(char) + shift - 65) % 26) + 65)
+        shifted_char = chr(((ord(char) + shift - 65) % 26) + 65)
+        result.append(shifted_char)
+        block_count += 1
 
-    # split the result into blocks of 5 characters and join them with spaces
-    blocks = [result[i:i + 5] + " " for i in range(0, len(result), 5)]
-    blocks = [''.join(blocks[i:i + 10]) for i in range(0, len(blocks), 10)]
-    result = '\n'.join(blocks)
+        if block_count % block_size == 0:
+            result.append(" ")
+        if block_count % (block_size * line_size) == 0:
+            result.append("\n")
 
-    return result
+    return ''.join(result)
+
 
 
 if __name__ == '__main__':
